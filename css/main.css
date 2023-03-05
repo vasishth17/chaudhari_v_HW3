@@ -13,26 +13,26 @@ html, body { height: 100% }
 
 body { 
   font-family: sans-serif;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
 /* main header rules */
 header {
-    background-color: red;
+    background-color: white;
     position: sticky;
     top: 0;
     text-align: center;
 }
 
-#main-logo { width: 600px; padding: 20px 0; }
+#main-logo { width: 300px; padding: 10px 0; }
 
 /* main rules here */
 #character_nav {
     text-align: center;
     background-color: #675050;
 
-    background-image: url('../images/backgroung\ image.jpg');
+    background-image: url('../images/back_img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -44,18 +44,17 @@ header {
 .characters li { 
     position: relative;
     display: inline-block;
-    height: 200px;
-    margin: 30px 8px;
+    height: 225px;
+    margin: 15px 8px;
 
-    background-color: black;
+    background-color: rgb(42, 42, 42);
 
     text-align: left;
-   
     cursor: pointer;
 }
 
 .characters li h5 {
-   position: relative;
+    position: relative;
     color: white;
     padding: 12px 8px;
 
@@ -67,24 +66,28 @@ header {
 .red_bumper {
     width: 100%;
     height: 6px;
-    background-color: rgb(2, 15, 255);
+    background-color: rgb(94, 0, 0);
 
     transition: height 0.2s ease-in-out;
-transition-delay: 0.3s;
+
     position: absolute;
 }
-.characters li h5:hover{text-decoration: underline;}
-.characters li:hover .red_bumper { height: 70px; }
 
-article { padding: 20px; }
+.characters li:hover .red_bumper { height: 75px; }
+
+article { padding: 30px; }
 
 /* select the h3 tag inside the article tag on the page */
 /* a selector followed by a space and then ANOTHER selector gets a reference to the parent element and then the child element or elements inside of it */
 article h3  {
     font-size: 2em;
     text-align: center;
-    margin-bottom: 14px;
+    margin-bottom: 25px;
+    color: red;
 }
+article h3:hover{font-size: 32.4px;
+color: white;}
+
 
 /* select the p tag inside the article tag on the page */
 article p {
@@ -97,9 +100,9 @@ article p {
 
 .sprite {
     width: 150px;
-    height: 0px;
+    height: 150px;
     
-    background-image: url('../images/backgroung\ image.jpg');
+    background-image: url('../images/FFsprites.jpg');
 }
 
 #carol { background-position: -150px 0; }
@@ -136,23 +139,24 @@ footer {
     left: 0;
 
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url('../images/snow.jpg');
+    background-image: url('../images/domic.png');
     background-repeat: no-repeat;
 
-    background-size: 45vh; /* 55% of the viewport height */
-    background-position: 15px  ;
+    background-size: 55vh; /* 55% of the viewport height */
+    background-position: 40px bottom;
 
     z-index: 5000;
 
     display: none;
 }
 
-#lightbox2 { background-image: url('../images/daenerys.jpg') }
 
-#lightbox3 { background-image: url('../images/jaime\ lannister\ png.png') }
-#lightbox4 {background-image: url(../images/bran\ stark\ png.png);}
-#lightbox5 {background-image: url(../images/cersei\ lannister\ png.jpg)}
-#lightbox6{background-image: url(../images/robb\ stark\ png.png);}
+
+#lightbox2{ background-image: url('../images/letty.png'); }
+#lightbox3{background-image: url('../images/jakob.png');}
+#lightbox4{ background-image: url('../images/ramsey.png'); }
+#lightbox5{ background-image: url('../images/mia.png'); }
+#lightbox6{ background-image: url('../images/tej.png'); }
 
 .lightbox_close {
     position: relative;
@@ -167,7 +171,7 @@ footer {
     font-weight: bolder;
 }
 
-.lightbox_close:hover { opacity: 0.5; color: red; }
+.lightbox_close:hover { opacity: 0.5; color: rgb(0, 170, 255); }
 
 .lightbox article {
     width: 55%;
