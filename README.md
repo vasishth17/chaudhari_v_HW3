@@ -1,2 +1,2 @@
-# chaudhari_v_HW3
-## This repo is for assignment 3
+# Fast and furious
+Fast and Furious is known for their beautiful visual effects and crazy scenes. Finally, the movies also feature realistic death-defying stunts, such as leaping between moving vehicles. It's no wonder every Fast & Furious film has grossed over $150 million
